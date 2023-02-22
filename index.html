@@ -9,60 +9,60 @@
     <title>Instagram</title>
 </head>
 <body>
-  <div class="container-fluid">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="iconos/instaico.png" height="25" width="25"> Instagram</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto" >
-            <li class="nav-item">
-              <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
-            </li>
-            <li class="nav-item dropdown">
-              <a id="ajustesBtn" class="nav-link dropdown-toggle bg-secondary text-white rounded" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="iconos/setting.png">
-              </a>
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <h5>Caption:</h5>
-                      <textarea id="textModal" placeholder="Add the caption of your post here" class="form-control" aria-label="With textarea"></textarea>
-                      <button id="buttIco" class="btn btn-outline-secondary">
-                      <img src="iconos/camara.png"/>
-                      </button>
-                      <button id="buttIco" class="btn btn-outline-secondary">
-                      <img src="iconos/location.png"/>
-                      </button>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-success">Publish</button>
-                    </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="iconos/instaico.png" height="25" width="25"> Instagram</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" >
+          <li class="nav-item">
+            <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
+          </li>
+          <li class="nav-item dropdown">
+            <a id="ajustesBtn" class="nav-link dropdown-toggle bg-secondary text-white rounded" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="iconos/setting.png">
+            </a>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Caption:</h5>
+                    <textarea id="textModal" placeholder="Add the caption of your post here" class="form-control" aria-label="With textarea"></textarea>
+                    <button id="buttIco" class="btn btn-outline-secondary">
+                    <img src="iconos/camara.png"/>
+                    </button>
+                    <button id="buttIco" class="btn btn-outline-secondary">
+                    <img src="iconos/location.png"/>
+                    </button>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
                   </div>
                 </div>
               </div>
-              <ul class="dropdown-menu dropdown-menu-end" >
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+            </div>
+            <ul class="dropdown-menu dropdown-menu-end" >
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <div class="container-fluid">
     <!-- NavTab -->
     <ul class="nav nav-pills justify-content-center pt-2" id="pills-tab" role="tablist">
       <li class="nav-item" role="presentation">
@@ -78,8 +78,8 @@
     </ul>
     <!-- Card feed -->
     <div class="row tab-content" id="pills-tabContent">
-      <div class="col-3 p-0"></div>
-      <div class="tab-pane fade show active col-6 p-0" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" id="pills-home">
+      <div class="col-3 col-sm-1 col-md-2 p-0"></div>
+      <div class="tab-pane fade show active col-6 col-sm-10 col-md-8 p-0" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" id="pills-home">
         <div class="card m-4 mx-auto" id="cardId">
           <h4 id="cardTitle"class="card-title">Titulo foto instagram</h4>
           <div><img src="https://picsum.photos/id/235/600/400" id="imgPost" ></div>
@@ -153,21 +153,21 @@
           </div>
         </div>
       </div>
-      <div class="col-3 p-0"></div>
+      <div class="col-3 col-sm-1 col-md-2 p-0"></div>
       <!-- Grid feed -->
       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
         <div class="row row-cols-3 row-cols-md-3">
-          <div class="col p-1">
+          <div class="col p-1 mt-2">
             <div class="card">
               <img src="https://picsum.photos/id/235/472/472" class="card-img-top" alt="...">
             </div>
           </div>
-          <div class="col p-1">
+          <div class="col p-1 mt-2">
             <div class="card">
               <img src="https://picsum.photos/id/236/472/472" class="card-img-top" alt="...">
             </div>
           </div>
-          <div class="col p-1">
+          <div class="col p-1 mt-2">
             <div class="card">
               <img src="https://picsum.photos/id/237/472/472" class="card-img-top" alt="...">
             </div>

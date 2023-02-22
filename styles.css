@@ -15,8 +15,6 @@
 
 }
 
-
-
 #imgPost{
     display: block;
     margin-left: auto;
@@ -72,4 +70,8 @@
 
 .card img{
     border-radius: 0;
+}
+
+.dropdown-toggle::after{
+    vertical-align: 0;
 }
